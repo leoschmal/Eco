@@ -1,0 +1,93 @@
+/*===============================MEDIA QUERIES=============================*/
+@media (min-width: 768px) {
+    .ulNavLat {
+      width: 15%;
+      height: 100%;
+      position: fixed;
+    }
+    .liLat a {
+      text-align: left;
+    }
+    .anchoBodyIndex {
+      margin-left: 15%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .contenedorCampos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .contenedorBotones {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+    .boton {
+      margin: 1rem;
+    }
+  }
+  @media (min-width: 480px) {
+    .ulMenu {
+      flex-direction: row;
+      gap: 3rem;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    .navPrincipal {
+      flex-direction: row;
+      position: sticky;
+      top: 0rem;
+      justify-content: center;
+    }
+  }
+  @media (min-width: 768px) {
+    .navPrincipal {
+      flex-direction: row;
+      position: sticky;
+      top: 0rem;
+      justify-content: space-between;
+    }
+  }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .padreTabla {
+      grid-template-columns: 2fr 5fr 3fr;
+      grid-template-areas:
+        "principio usos caract"
+        "uvc usosuvc caractuvc"
+        "amonio usoamonio caractamonio";
+    }
+  }
+  @media (min-width: 768px) {
+    .ulNavLatServ {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: hidden;
+      -webkit-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
+      -moz-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
+      box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
+    }
+    .anchoBodyServ {
+      margin-left: 25%;
+      background-color: $colorBlanco;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .contenedorFooter {
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-areas:
+        "seguinos seguinos seguinos seguinos visitanos visitanos visitanos visitanos"
+        "facebook instagram youtube linkedin mapa mapa mapa mapa"
+        "whatsapp twitter llamar mail mapa mapa mapa mapa"
+        "firma firma firma firma firma firma firma firma";
+    }
+  }

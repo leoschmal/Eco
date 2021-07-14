@@ -1,0 +1,189 @@
+/*Reseteo general de margin y padding*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+/*normalizo rems*/
+html {
+    font-size: 62.5%;
+}
+
+/*Iplementacion de estilos en ETIQUETAS*/
+body {
+    background-color: $colorBlanco;
+    font-size: 16px;/* 1rem = 10px*/
+    main {
+        background: $colorBlanco;
+    }
+}
+
+nav {
+    background-color: $colorPrimarioOscuro;
+}
+
+//Creo un mixin para estilos comunes en los encabezados
+@mixin encabezados($weight, $color){
+  font-weight: $weight;
+  color: $color;
+}
+//Uso de for e if para dar estilos a los headings (h1 al h3)
+@for $i from 1 through 3{
+  h#{$i}{
+    font-size: 6rem / $i;
+    @include encabezados(normal , $colorTextoPrimarioClaro);
+    @if $i==1{      
+      font-family:$fuentePrimaria;      
+      text-align: center;
+      letter-spacing: 2rem;
+    }@else if $i==2{
+     font-family:$fuenteSecundaria;
+    }@else if $i==3{
+      font-family: $fuentePrimaria;
+      color: $colorTextoPrimario;
+      font-size: (6rem / $i);
+    }
+  }
+}
+//While para crear clases con ancho de imagenes especificos
+$j: 8;
+@while $j > 0 {
+  .anchoImg#{$j} {
+    max-width:10rem * $j;
+    width:100%;
+    @if $j == 8{
+      $j: $j - 3;
+    }@else{
+      $j: $j - 2;
+    }
+  }    
+} 
+p {
+  @include encabezados(normal , $colorTextoPrimario);
+    font-family: $fuentePrimaria;
+    text-align: justify;
+}
+
+img {
+    border-radius: 1.2rem;
+}
+
+form {
+    font-family: $fuentePrimaria;
+    font-weight: bold;
+}
+
+ul {
+    li {
+        color: $colorTextoSecundario;
+        text-decoration: none;
+        font-family: $fuenteSecundaria;
+        list-style: none;
+        display: inline;
+        list-style-type: none;
+    }
+}
+
+ol {
+    li {
+        text-decoration: none;
+        font-family: $fuenteSecundaria;
+        list-style: upper-latin;
+    }
+}
+
+li {
+    a {
+        @include encabezados(normal , $colorNegro);
+        text-decoration: none;
+        font-family: $fuentePrimaria;
+        padding: 0rem 2rem;
+    }
+}
+
+input {
+    width: 10rem;
+}
+
+.sombra {
+    -webkit-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
+  }
+  .boton {
+    background-color: $colorPrimarioOscuro;
+    color: $colorTextoPrimarioClaro;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    text-align: center;
+    width: 100%;
+    border: none;
+    margin: 1rem;
+    transition: all 500ms;
+  }
+  .boton:hover {
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+  }
+  .separador{
+    gap:3rem;
+  }
+
+  nav div ul li a:hover{
+    background-color: $colorAcentuacion;
+    color:$colorBlanco !important;
+    font-weight:normal;  
+    border-radius: 0rem;
+    transition: all 800ms;
+  }
+  /* Implementacion de estilos mediante CLASES*/
+.h2Subtitulo {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: normal;
+  }  
+  .h2SubtArtPpal {
+    @include encabezados(normal , $colorTextoPrimarioClaro);
+    text-align: right;
+    font-size: 3.5rem;
+
+    padding-right: 3rem;
+  }  
+  .h2SubtArtSec {
+    @include encabezados(bolder , $colorTextoPrimario);
+    text-align: right;
+    font-size: 3.5rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }  
+  .parrafo1 {
+    @include encabezados(normal , $colorBlanco);
+    font-size: 2rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+  }  
+  .parrafo2 {
+    @include encabezados(normal , $colorTextoPrimario);
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+  }
+  
+  /*Clases referidas a imagenes*/
+  .anchoIcon {
+    width: 3rem;
+  }  
+  .anchoLogo {
+    width: 5rem;
+  }
+  .centrado {
+    text-align: center;
+    justify-content: center;
+  }
+  .altoText {
+    height: 10rem;
+  }

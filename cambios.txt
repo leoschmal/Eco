@@ -1,0 +1,376 @@
+
+##======================================REGISTROS DE CAMBIOS==============================================##
+#=====================================Desafio 2============================================================#
+Primeros pasos con html ---> agregando css a nuestro html
+Consigna: 
+Crea un archivo CSS, y linkéalo al HTML entregado en el 
+desafío de la clase anterior, esto es, “Primeros pasos con HTML”. 
+Asigna color a títulos, párrafos y listas, mediante clases y etiquetas.
+
+Cambios Aplicados:
+- correcion de sugerencias desafío anterior (mal uso y abuso de <span>)
+- creacion de directorio css
+- creacion de archivo "estilos.css" en directorio css
+- linkeo de "estilos.css" a cada uno de los head de los html
+- adicion de paleta de colores generada en el sitio materialpalette.com
+- definicion de selectores en css (body, h1,h2,h3, entre otros)
+- definicion de clases con sus propiedades y valores
+- aplicacion de las clases en los archivos html
+
+#============================Desafio Complementario (Clase 2)===============================================#
+Consigna:
+Tomando como base las estructuras creadas en HTML de la clase dos para tu proyecto, dar formato al menú, 
+color a los títulos, formato a las listas a través de etiquetas.
+Agregar videos e imágenes a alguna de las secciones del proyecto y darle formato a los títulos de las tablas, 
+agregando color. 
+Se evaluará el estilo y estructura del código.
+
+Cambios Aplicados:
+- Para organizar mejor los directorios multimedia, se crea una carpeta "media", con subdirectorios "img", 
+"icons" y "video".
+- Se agregan imagenes en disptintas secciones, modificando sus propiedades mediante css. Se quitan los 
+estilos en línea.
+- Se agrega video en la seccion servicios, la misma queda fija a un costado mientras se hace scroll.
+- Se agrega video presentacion en index en main "Bienvenidos".
+- Se agregan audios en la seccion productos brindando informacion sobre los productos utilizados.
+
+#===========================================Desafio 3=======================================================#
+Consigna:
+Asigna estilos vistos en esta clase al proyecto final, en función de lo que tenías en mente gracias al boceto.
+Aspectos a incluir en el entregable:
+Incluir de acuerdo a tu proyecto ALGUNAS de las propiedades vistas:
+Texto: font-style, font-weight, font-size, font-family, text-align, text-transform, line-height, text-decoration, letter-spacing y/o word-spacing.
+Listas: list-style-type, list-style-position y/o list-style.
+Fondos: background-color, background-image, background-repeat, background-position y/o background-size.
+Tipografía de Google Fonts.
+
+Cambios Aplicados:
+- Definicion de Fuentes (desde google fonts). Se usarán 3 fuentes:
+    - Poppins (Titulos), Nunito (parrafos y texto en gral), Mate SC (tablas)
+- Definición de distintas clases segun parte principal del html (MAIN O SECTIONS), con sus tipografias, colores,
+tamaños, y demás caracteristicas.
+- Trabajo con fondos segun navbars (principal o lateral en index), main, sectiones y footer.
+- Mejora en navbar principal al hacerla "sticky) para que quede siempre visible.
+- Mejora en navbar lateral en index para que quede fija y poder desplazarse comodamente en sus distintas secciones.
+
+#============================Desafio Complamentario (Clase 3)===============================================#
+Consigna: 
+Agregar a su proyecto:
+Aplicar camelCase a las variables del proyecto.
+Estructurar cada una de las páginas que se diferencien las secciones del contenido, como por ejemplo:
+Cambios Aplicados:
+-Aplicacion de CamelCase en clases (antes tenis sus nombres separadas por "-")
+-Diferenciacion de secciones segun:
+    - clases main con color propio
+    - distintas secciones separadas por <hr> (por ahora) y segun colores (main, section, articles, footer y 
+    nabvar tienen su color identificatorio), mas adelante seran separadas por distintos contenedores con 
+    estilos propios
+
+
+#============================1er Entrega Proyecto Final======================================================#
+Es la sumatoria de los desafios entregables y complementarios hasta ahora.
+Espero en las proximas clases poder ordenar el footer y la barra de navegacion con ayuda de grids o 
+Booststrap.
+No me convencen aún la paleta de colores que elegí y la tipografía.
+Espero poder bajar el tamaño de los archivos multimedia, en especial los videos.
+
+
+#==========================Cambios devolucion 1er Entrega====================================================#
+- Implementacion de variables en css para la paleta de Colores (golazo!!)
+- Cambios en navBar, eliminacion de listas por divs 
+- correccion de rutas a archivos media
+- Elimine estilos en linea que me habian quedado sin querer
+
+#==================================Desafio 5 BOX MODEL(Clase 5)==============================================#
+Consigna: agrega al CSS del Proyecto Final (¿Cuál necesitan: espacio exterior, interior, bordes?). 
+Márgenes. 
+Rellenos.
+Bordes.
+Menú.
+Cambios Aplicados:
+- Uso de margin(en todas sus variantes), padding(en todas sus variantes), border, border radius, rellenos, etc.
+#==============================Desafio Complementario - BOX MODEL (Clase 5)==================================#
+Consigna: 
+Luego de resolver el desafío entregable Box Modeling, agrega al proyecto el menú con submenú. 
+
+Cambios Aplicados:
+    -Desarrollo de Menu con Submenu en Barra de Navegacion Principal
+#==============================Desafio 6 - FLEXBOX (Clase 6)=================================================#
+Consigna: 
+Con los conocimientos adquiridos en la clase de hoy, modela con flexbox alguna sección de tu 
+Proyecto Final.
+Aspectos a incluir en el entregable:
+Dentro de una sección o página de tu proyecto, modela con flexbox utilizando alguna/s de las siguientes 
+propiedades: display: flex, flex-direction, flex-wrap, flex-flow, justify-content, align-items, align-content, order, flex-basis, flex-shrink y/o flex-basis.
+
+Cambios Aplicados:
+    -Implementacion de FlexBox en barra de navegacion principal
+#=====================================Desafio complementario FLEXBOX========================================#
+Consigna: 
+Con los conocimientos adquiridos en la clase de hoy, modelar con flexbox al menos dos secciones 
+de su Proyecto Final.
+
+Cambios Aplicados:
+    -Implementacion de FlexBox en Seccion Galeria (Index)
+    -Implementacion de Flexbox en Sección Staff (Index)
+    -Implementacion de FlexBox en Mision, Vision y Valores (QuienesSomos.html)
+    -Implementacion de FlexBox en seccion Productos (productos.html)
+    -Implementacion de FlexBox en seccion Servicios (servicios.html)
+#============================================Desafio 7 GRIDS=================================================#
+Consigna:
+Aplicar GRIDS en uno o más HTML que tengas (por ej: integrantes.html) 
+Aplicar Mobile First en el Home de tu proyecto para que sea responsive en tres dispositivos. 
+
+Cambios Aplicados:
+    GRIDS:
+        - Implementacion de Grid en seccion Footer.
+        - Implementacion en tabla de productos seccion productos.
+        - Implementacion en Formulario de contacto seccion contacto.
+    MOBILE FIRST:(break Points en 480px 768px y 1200px)
+        - Implementacion en Footer, en dos niveles, cambiando el numero de columnas de la grilla
+        - Implementacion en tabla productos de seccion productos en tres niveles.
+        - Implementacion en Barras de navegacion (Principal y laterales - en index y servicios -)
+        - Implementacion en Formulario de Contacto de seccion contacto.
+
+#================================Desafio 8 TRANSFORMACIONES-ANIMACIONES======================================#
+Consigna: 
+Agrega animaciones, transformaciones y/o gradientes a tu proyecto, que se adapten al mismo. Por ejemplo: 
+podrías hacer que cuando pase el mouse por alguna foto, escale al doble; animar un título o imagen de la 
+sección de publicidad; agregar gradiente al footer; y/o cambiar el color de los botones al pasar sobre ellos.
+Aspectos a incluir en el entregable:
+Utiliza un gradiente en alguna sección de tu sitio, ya sea lineal (linear-gradient) o radial (radial-gradient). 
+Aplica una o más de una transformación (transform): mover un elemento (translate), escalar el tamaño (scale), 
+girar (rotate) o cambiar la perspectiva (skew).
+
+Cambios Aplicados:
+    -Gradientes: En seccion header de cada html. En secciones Principales.
+    -Transformaciones:
+        navbar ppal: cambio de tamaño sobre seccion en la q se hace hover
+        index->galeria: aumento de tamaño de imagen y caja para añadir marco blanco
+        index->navBar lateral. cambio de tamaño de fuente y color
+        footer: agregado de un box negro con opacidad en cada caja de icono+nombre de red social
+        Seccion Nosotros: scale y rotate en SVGs
+        Seccion Servicios: translate y aumento de tamaño.
+
+
+    -Transiciones:
+        barra de navegacion, transicion de color.
+        botones. detalle de aumento de tamaño (form de contacto y el de barra de navegacion).
+        footer. iconos de redes con opacidad.
+        Seccion Nosotros. en SVGs de mision volores y Vision.
+        Seccion Servicios. en SVGs de cada uno de los servicios
+        Index->Galería. 
+        Index->navBar lateral
+    -Animaciones: Logo en barra de navegacion - desde Animate.css
+#============================================================================================================#
+Objetivos generales:
+    Seleccionar la paleta de color y respetarla consistentemente en los nuevos elementos creados.
+    Definir tamaños tipográficos que reflejan lo planteado en el prototipo.
+    Usar reglas de CSS para darle estilo y forma a los elementos web.
+    Aplicar lo aprendido en box-modelling, flex, y grids para estructurar el contenido de la web, armando 
+    layouts en las que se distribuye el contenido.
+Se debe entregar: 
+    Estructuración visual del contenido: usa reglas de CSS para crear layouts y distribuir los elementos de tu 
+    sitio web, en base al diseño planteado originalmente. Debes valerte de flex o box-modeling para estructuras 
+    unidimensionales, o grid para bidimensionales. 
+    Estilo básico de la web: crea paletas para darle un estilo consistente a tu sitio web. Esto acompañado de 
+    la utilización de otros elementos como las tipografías, el uso de sombras, el radio de los bordes o el 
+    espaciado entre los elementos, etcétera, para forjar el estilo que la web va a mantener página a página.
+
+Cambios Aplicados:
+    - Paleta de Colores Implementada
+    - Tipografia y tamaños implementados
+    - CSS, boxmodeling, flexbox y grids utilizados
+    - Implementacion de criterios con paletas de colores, tipografias, cajas y tamaños definen secciones segun
+      importancia y jerarquia en el layout.
+    - al ser un sitio de una empresa de limpieza, la idea es que con los colores, la tipografia y el orden de 
+      las secciones (puede parecer aburrido), se transmita una idea de "limpieza".
+
+#=====================================2da Entrega- Extras====================================================#
+Normalize.css: Normalize hace que los navegadores representen todos los elementos de manera más consistente y
+    en línea con los estándares modernos. Precisamente se dirige solo a los estilos que necesitan normalizarse.
+    Se descarga el css y se linkea en todos los html.
+
+Sombras: de CSSmatic. para diferenciar y dar más énfasis a secciones y cajas.
+ 
+Navegacion: barra de navegacion ppal indica en que seccion nos encontramos.
+
+Todo a rem (truquito): navegando de tutorial en tutorial me tope con un truco para pasar todo lo que uno 
+    piensa en pixeles a rem. Consiste en poner en el css de la etiqueta html un font-size de 62.5% y luego en 
+    la etiqueta body un font-size de 16px. de esta manera queda la relacion 1rem = 10px, y nos ahorra tener que
+    utilizar alguna calculadora de rems, por ejemplo. Me pareció comodo y coqueto :)
+
+#=====================================2da Entrega- Cambios Devolucion========================================#
+La paleta de colores está muy bien seleccionada, aunque incorporaría un poco más de blanco o casi-blanco para 
+que no quede tan saturado. Podrías invertir algunas secciones y ponerles el fondo blanco y el color de los 
+títulos en verde o azul, dejar el fondo de color para elementos que hay que resaltar (como las fotos del staff)
+
+La tipografía también me gusta mucho, aunque creo que la Poppins es muy liviana (la tenés importada únicamente 
+con 100 de font-weight); iría mejor un 400 de base porque se pierde un poco
+
+Animaciones: están muy buenas todas. Como te comenté en la entrega de animaciones, 
+en las fotos sería mejor aplicar un transform: scale (); así no te empuja el resto del contenido. La del logo 
+también está muy buena, aunque se hace un poco largo que salga de la derecha; podrías hacer que entre desde la 
+izquierda para que el efecto sea similar pero más breve
+
+#=====================================Desafio 9 (aplicando Booststrap)========================================#
+Consigna: 
+En la página principal de tu proyecto, aplica las diferentes funcionalidades vistas del framework Bootstrap. 
+Cambios Aplicados:
+    - Aplicacion de Booststrap en navBar Principal
+    - Aplicacion de Booststrap en Galería de Imagenes
+    - Aplicacion de Booststrap en Footer
+
+#=====================================Desafio 10 (Booststrap con JS)==========================================#
+Consigna: 
+Agrega componentes con JavaScript a tu proyecto final. Adapta a mobile una de las páginas del mismo.
+Aspectos a incluir en el entregable:
+Incluye uno o más componentes de Bootstrap con JavaScript: carousel, dropdown, modal, budges, mensajes colapsados, etc.
+Utiliza media queries o Bootstrap para adaptar a mobile una página de tu sitio.
+
+Cambios Aplicados:
+    -Aplicacion de Collapse en navBar->Login
+    -Aplicacion de Popover en navBar latarel de Index (link Noticiias)
+    -Aplicacion de Budges en navBar latarel de Index (link Noticiias) y en Título de Seccion Noticias
+    -Aplicacion de Modal en secciones de Index (Boton "SABER MAS)
+    -Aplicacion de Carrousel(crossfade) en Fotografias de secciones en Index
+
+Extras:
+    - Aplicacion de Bot de Whatsapp y bot de atencion a clientes(insercion de scriptJS de Cliengo)
+    *Si podes fijate si anda, así de paso lo pruebo jaja (o hablale a Pilar jaja)
+
+
+#=====================================Desafio 11 (Aplicando SASS 1)=================================#
+Consigna: 
+Crea el archivo SCSS de sus proyectos y compilarlos. Además, deberás crear al menos 
+cuatro (4) bloques con la metodología de BEM.
+
+Cambios aplicados:
+    - Creacion de archivos .scss en directorio /scss:
+            - prueba.scss
+            - _variables.scss 
+            - _secciones.scss 
+            - _navegacion.scss
+            - _header.scss
+            - _generales.scss
+            - _forms.scss
+            - _footer.scss
+    - Implementación de anidación en cada uno de ellos (falta seguir anidando)
+    - Implementación de sistema BEM en:
+            - Seccion servicios de index.html (en _secciones.scss)
+            - Seccion Productos en productos.html (en _secciones.scss)
+            - Formulario de contacto en contacto.html( en _forms.scss)
+            - Login de navegacion principal(en _navegacion.scss)
+
+#=====================================Desafio Complementario 11 (SASS 1)===========================#
+Crear el archivo SCSS con un estructura de archivos adaptada a sus proyectos y compilarlos.
+Crear al menos ocho (8) bloques con la metodología de BEM.
+
+Cambios aplicados:
+        - BEM:
+            - Seccion Mision, valores y vision en nosotros.html(en _secciones.scss)
+            - Seccion entrevistas en productos html(en _secciones.scss)
+            - Seccion staff en index.html(en _secciones.scss)
+            - Seccion Novedades en index.html(en _secciones.scss)
+        - SASS:
+            - Estructura de carpetas y archivos adecuada al proyecto
+#===================================APLICANDO SASS - OPERACIONES===================================#
+Consigna:
+Agrega SASS y sus operaciones a tu Proyecto Final.
+Aspectos a incluir en el entregable:
+Selecciona tres o más bloques de alguna de tus páginas que aún no tengan estilos, 
+y genera el código necesario en SCSS.
+
+Cambios Aplicados:
+    - en archivo "_generales.scss" aplicacion de multiplicaciones, divisiones 
+    y restas dentro de bucle for y while
+
+
+#=========================APLICANDO SASS II (Complementario)- OPERACIONES==========================#
+Consigna: 
+    Agregar más operaciones a elegir entre:
+        - For
+        - Condicional
+        - O ambos si tienen ganas!
+Cambios Aplicados:
+    - en "_generales.scss":
+        - bucle for para crear clases h1 a h3.
+        - condicional if para crear clases h1 a h3
+        - creacion de mixin encabezados para aplicar parámetros comunes a distintas clases
+        - bucle while para crear clases con anchos de imagenes especificos y condicionales dentro
+
+#=========================3ra Entrega Proyecto final===============================================#
+Estructura avanzada de la web
+Objetivos generales:
+    Realizar una estructura del HTML prolija, limpia, fácil de leer y que no tenga errores en sus 
+    atributos o en sus valores.
+Objetivos específicos:
+    - Agregar elementos HTML según la necesidad de armar contenedores o elementos web determinados, en 
+    base al framework elegido y la documentación del mismo. 
+    - Agregar transformaciones, animaciones y/o transiciones para otorgarle dinamismo a la web en 
+    elementos que tengan interacción con el usuario.
+    Se debe entregar:
+    - Maquetado de la web: las estructuras maquetan a la web en base al framework elegido, haciendo 
+    usos de clases utilitarias para armar grillas, elementos web y estilos propios del framework, 
+    además del HTML de contenido.
+    - Páginas: todas las páginas tienen el contenido estructurado y el estilo linkeado. También tiene 
+    que tener agregadas las diferentes librerías de Javascript y CSS pertinentes al framework.
+CSS
+Objetivos generales:
+    Crear archivos de CSS para darle estilo a la web.
+Objetivos específicos:
+    - Agregar transformaciones, animaciones y/o transiciones para otorgarle dinamismo a la web en 
+    elementos que tengan interacción con el usuario.
+    - Hacer uso de selectores de CSS para poder darle estilo propio a los elementos que ya vienen 
+    con su propia identidad del framework.
+Se debe entregar:
+    - Estilo avanzado: se le mejorarán los elementos interactivos con variaciones en sus diferentes 
+    estados, ya sea de la mano de transformaciones, transiciones y/o animaciones.
+    - Estilo del Framework: no todos los elementos del framework van a tener una estética que condice 
+    con el sitio en el que son implementados, por lo que se usará CSS para darles un estilo acorde.
+    - Estructura de la web: usa etiquetas no sólo para armar contenido, sino para armar los elementos 
+    que van a conformar el layout de la web, los contenedores, etc.
+
+#=========================Desafío - Aplicando SEO==================================================#
+Consigna: 
+Agregar SEO a tu Proyecto Final.
+    - Aspectos a incluir en el entregable:
+Suma keywords, descripción, títulos y encabezado a todas las páginas de tu sitio.
+    - Explica en un Google Doc los cambios realizados en el punto anterior, por ejemplo: 
+     “Agregué estas keywords”, “cambié estos títulos”
+
+Cambios aplicados:
+    - En TODOS los html del proyecto:
+        - Se aplicaron Keywords especificos referidos a la seccion correspondiente.
+        - Se agrego descripcion especifica para cada pagina del proyecto
+        - Se Cambiaron titulos a cada html para diferenciarlos entre Si
+        - Un solo h1 por html
+        - Reorganizacion de carpetas y jerarquias para un mapa de sitio mas claro 
+        - Revision de Redacción, comienzo a eliminar parrafos lorem ipsum y agregar contenido "real"
+#=========================Desafío Complementario - Aplicando SEO===================================#
+Consigna: 
+Aplica todas las buenas prácticas y principios de SEO a tu proyecto.
+Explica en un Google Doc 10 cambios o mejoras que hayas hecho y que impactarían en el SEO de tu 
+proyecto, explicitando el cambio y la justificación. Por ejemplo, “Creé una página 404 personalizada 
+que redirige a la homepage”, o “Acorté X url y la hice más descriptiva”. 
+Cargarlo a la plataforma.
+
+Cambios Aplicados:
+Con ayuda de lo visto en clase y los plugins Lighthouse, SEOminion y SEOquake, realicé las siguientes
+mejoras
+    - 1. Saqué el css de normalize que habia agregado clases atras ya que me avisaba de errores 
+    en el rendimiento de la pagina
+    - 2. agregué en las imagenes linkeadas a paginas externas (redes sociales) el atributo rel="noreferrer",
+    ya que lighthouse me avisaba de un problema
+    - 3. modificacion de colores de letras y fondos en barra de navegacion lateral en Index, ya que los
+    plugins auditores me avisaban de baja relacion de contraste para lectura en personas con poca vision.
+    - 4. cambie la relacion de aspecto en muchas imagenes, por la recomendada por los plugins
+    - 5. Compresion de imagenes, archivos de video y audios
+    - 6. Revision de Redacción, comienzo a eliminar parrafos lorem ipsum y agregar contenido "real"
+    - 7. Reorganizacion de carpetas y jerarquias para un mapa de sitio mas claro.
+    - 8. Todas las imagenes tienen texto alt descriptivo.
+    - 9. Relación Texto/HTML adecuada
+    - 10. Especificacion de Idioma
+    - Utilizacion de favicon
+
+

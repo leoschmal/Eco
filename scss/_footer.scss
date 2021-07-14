@@ -1,0 +1,89 @@
+/*estilos footer aplicando grillas*/
+.contenedorFooter {
+    background-color: $colorPrimarioOscuro !important;
+    font-family: $fuentePrimaria;
+    }
+    
+    .hijo {
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+      transition: all 500ms;
+    }
+    
+    .hijo1{
+      transition: all 500ms;
+    }
+    .hijo1:hover{
+      transform: scale(1.3,1.3);
+    }
+    
+    .hijo:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 0.5rem;
+    }
+    .hijoSeguinos {
+      grid-area: seguinos;
+    }
+    .hijoYoutube {
+      grid-area: youtube;
+      display: grid;
+      justify-items: center;
+    }
+    .hijoVisitanos {
+      grid-area: visitanos;
+      display: grid;
+      justify-items: center;
+    }
+    .hijoFace {
+      grid-area: facebook;
+      display: grid;
+      justify-items: center;
+    }
+    .hijoIg {
+      grid-area: instagram;
+      display: grid;
+      justify-items: center;
+    }
+    .hijoTwitter {
+      grid-area: twitter;
+      display: grid;
+      justify-items: center;
+    }
+    .hijoWhatsapp {
+      grid-area: whatsapp;
+      display: grid;
+      justify-items: center;
+    }
+    .hijoLinkedin {
+      display: block;
+      grid-area: linkedin;
+      display: grid;
+      justify-items: center;
+    }
+    .hijoEscribinos {
+      grid-area: mail;
+      display: grid;
+      justify-items: center;
+    }
+    .hijoMail {
+      grid-area: llamar;
+      display: grid;
+      justify-items: center;
+    }
+    .hijoMapa {
+      grid-area: mapa;
+    }
+    .hijoFirma {
+      grid-area: firma;
+      text-align: center;
+    }
+    
+    .contenedorFooter a {
+      text-decoration: none;
+      font-family: "Poppins", sans-serif;
+      color: black;
+      font-weight: bold;
+    }

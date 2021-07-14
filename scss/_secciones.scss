@@ -1,0 +1,354 @@
+//Secciones en index
+.anchoBodyIndex {
+  margin-left: 0%;
+  background-color: $colorBlanco;
+
+}
+
+.seccionPpal {
+  background-color: $colorAcentuacion;
+  padding: 1rem 3rem;
+  padding-bottom: 1rem;
+  margin: 3rem;
+  border-radius: 1.5rem;
+  background-image: linear-gradient($colorAcentuacion,
+      $colorDivision);
+}
+
+.seccionSec {
+  background-color: $colorPrimarioClaro;
+  padding: 2rem;
+  margin: 5rem;
+  border-radius: 1.5rem;
+}
+
+/*estilos para Seccion Galeria(Index)*/
+.flexGal {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $colorAcentuacion;
+  justify-content: space-between;
+  border-radius: 1.5rem;
+  padding: 4rem;
+}
+
+.galDiv {
+  display: flex;
+  width: 25rem;
+  margin: 1rem;
+  overflow: visible;
+  opacity: 0.5;
+  transition: all 1s;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    max-width: 33rem;
+    width: 100%;
+    max-height: 33rem;
+    height: 100%;
+    //height: min(33rem, 100%);
+    background-color: $colorBlanco;
+    opacity: 1;
+    border: 0.9rem solid $colorBlanco;
+    border-radius: 1rem;
+    margin: 0;
+    z-index: 9;
+  }
+}
+
+.galImg {
+  z-index: 3;
+  transition: all 1s;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 0;
+  fill: cover;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
+    z-index: 8;
+  }
+
+}
+
+
+//Secciones en Servicios
+.anchoBodyServ {
+  margin-left: 0%;
+  background-color: $colorBlanco;
+}
+
+/*estilos para Seccion Staff(index)*/
+.staff {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  justify-content: space-around;
+
+  .staff__staffSet {
+    width: 40rem;
+    border-radius: 2rem;
+    background-color: $colorAcentuacion;
+    margin: 2rem;
+
+    .staff__staffSet--imgStaff {
+      width: 15rem;
+      height: 20rem;
+    }
+
+    .staff__staffSet--parrafoStaff {
+      padding: 3rem;
+      color: $colorTextoPrimario;
+      font-weight: bold;
+      padding-right: 3rem;
+      padding-bottom: 1rem;
+    }
+
+    .staff__staffSet--tituloStaff {
+      text-align: center;
+      font-weight: bolder;
+      padding-top: 2rem;
+    }
+  }
+
+}
+
+/*estilos para Seccion MisionValoresVision(Quienes Somos)*/
+.contMision {
+  background-color: $colorBlanco;
+  .flexMision {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    justify-content: space-around;
+  }
+
+  .mision {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 35rem;
+    border-radius: 1rem;
+    background-color: $colorPrimarioClaro;
+    padding: 0.5rem;
+    margin: 1rem;
+
+    .mision__imgMision {
+      width: 15rem;
+      height: 15rem;
+      padding: 1rem;
+      transition: all 1s;
+
+      &:hover {
+        transform: scale(1.2, 1.2);
+      }
+    }
+
+    .mision__parrafoMision {
+      color: $colorTextoPrimario;
+      font-weight: normal;
+      padding: 2rem 2rem;
+    }
+  }
+}
+
+
+
+
+/*estilos para Seccion Entrevistas(productos.html)*/
+.entrevistas {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  justify-content: space-around;
+
+  .entrevistas__modulo {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 40rem;
+    border-radius: 20px;
+    background-color: $colorPrimarioClaro;
+    padding: 0.5rem;
+    margin: 1rem;
+  }
+
+  .entrevistas__modulo--parrafo {
+    padding: 0rem 2rem;
+    margin-bottom: 2rem;
+    color: $colorTextoPrimario;
+    font-weight: normal;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
+
+/*estilos para Seccion Servicios(servicios.html)*/
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  justify-content: space-around;
+
+  .servicios__modulo {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    //width: min(40rem, 100%);
+    max-width: 40rem;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: $colorAcentuacion;
+    padding: 0.5rem;
+    margin: 1rem;
+
+    .servicios__modulo--imgServicios {
+      width: 20rem;
+      height: 20rem;
+      padding: 2rem;
+      transition: all 1s;
+
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+}
+
+/*Tabla productos aplico Grid*/
+.tabla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "principio principio"
+    "uvc amonio"
+    "usos usos"
+    "usosuvc usoamonio"
+    "caract caract"
+    "caractuvc caractamonio";
+  align-items: center;
+  margin: 0px;
+  padding: 1rem;
+  width: 100%;
+
+  .tabla__hijoTabla {
+    display: flex;
+    background-color: $colorDivision;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .textoTabla {
+      padding: 0px 2rem;
+      width: 100%;
+      color: $colorNegro;
+      font-size: 2rem;
+    }
+
+
+  }
+
+  .tabla__hijoTabla--encabezado {
+    text-align: center;
+    background-color: $colorPrimario !important;
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .tabla__hijoTabla--principio {
+    grid-area: principio;
+    border-radius: 1rem;
+  }
+
+  .tabla__hijoTabla--usos {
+    grid-area: usos;
+    border-radius: 1rem;
+  }
+
+  .tabla__hijoTabla--caracteristicas {
+    grid-area: caract;
+    border-radius: 1rem;
+  }
+
+  .tabla__hijoTabla--uvc {
+    grid-area: uvc;
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  .tabla__hijoTabla--amonio {
+    grid-area: amonio;
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  .tabla__hijoTabla--usoUvc {
+    grid-area: usosuvc;
+    border-radius: 1rem;
+    text-align: justify;
+  }
+
+  .tabla__hijoTabla--usoAmonio {
+    grid-area: usoamonio;
+    border-radius: 1rem;
+    text-align: justify;
+  }
+
+  .tabla__hijoTabla--caractUvc {
+    grid-area: caractuvc;
+    border-radius: 1rem;
+    text-align: justify;
+  }
+
+  .tabla__hijoTabla--caractAmonio {
+    grid-area: caractamonio;
+    border-radius: 1rem;
+    text-align: justify;
+  }
+}
+
+//seccion novedades
+.articulo {
+  margin: 0;
+  padding: 0;
+
+  .articulo__titulo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .articulo__parrafo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .articulo__img {
+    margin: 0;
+    padding: 0;
+    border-radius: 10rem;
+
+    .articulo__img--centrado {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+/*NavBar principal*/
+.navPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: $colorPrimarioClaro;
+    z-index: 1;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    gap: 3rem;
+    z-index: 6;
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .input {
+        width: 10rem;
+    }
+}
+
+.navegacion {
+    background-color: $colorPrimarioClaro;
+}
+
+.secciones {
+    padding: 0 4rem;
+    gap: 4rem;
+}
+
+.divMenu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+
+    li {
+        padding: 2rem 1rem;
+        border-radius: 0.8rem;
+        text-align: center;
+        transition: all 800ms;
+
+        &:hover {
+            padding: 1rem 2rem;
+            background-color: $colorAcentuacion;
+            color: $colorTextoPrimarioClaro;
+            border-radius: 0.5rem;
+        }
+    }
+
+    a {
+        padding: 1rem 2rem;
+        &:hover {
+            color: $colorTextoPrimarioClaro;
+            font-weight: bold;
+        }
+    }
+}
+
+.enUso {
+    background-color: $colorAcentuacion;
+    color: $colorBlanco;
+    border-radius: 0.5rem;
+    a {
+        color: $colorBlanco !important;
+        
+    }
+}
+/*Login*/
+.login {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    .login__input {
+        width: 100%;
+        border: none;
+        padding: 0rem 0rem;
+        background-color: $colorBlanco;
+        border-radius: 0.5rem;
+        font-family: "Poppins", sans-serif;
+        color: $colorNegro;
+        font-weight: normal;
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 0.1rem 0rem;
+    }
+    .login__boton {
+        background-color: $colorPrimario;
+        color: $colorTextoPrimarioClaro;
+        padding: 0rem 0rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        border-radius: 0.4rem;
+        text-align: center;
+        width: 18rem;
+        border: none;    
+        transition: all 500ms;    
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05, 1.05);
+        }
+    }
+}
+
+/*Barra de navegacion Lateral*/
+.ulNavLat {
+    list-style-type: none;
+    margin: 0rem;
+    padding: 2rem 0rem;
+    width: 100%;
+    background-color: $colorDivision;
+    height: auto;
+    overflow: hidden;
+
+    .liLat {
+        display: block;
+        width: 100%;
+        transition: all 400ms;
+        &:hover {
+            background-color: $colorAcentuacion;
+            transform: scale(1, 1.1);
+        }
+
+        a {
+            display: block;
+            text-align: left;
+            transition: all 800ms;
+
+            &:hover {
+                color: $colorTextoPrimarioClaro;
+            }
+        }        
+    }
+}
+/* video lateral Seccion servicios*/
+.ulNavLatServ {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    position: none;
+    height: auto;
+    overflow: auto;
+    text-align: center;
+  }
+
+

@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: $colorPrimarioOscuro;
+    //border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    background-image: linear-gradient(
+      $colorPrimarioOscuro,
+      $colorPrimario
+    );
+  }
+
+  /*Animacion en Logo de navBar*/
+.animate__animated.animate__backInRight {
+  --animate-duration: 2s;
+  --animate-delay: 0.9s;
+  --animate-repeat: 4;
+}

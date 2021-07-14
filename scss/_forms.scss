@@ -1,0 +1,93 @@
+/* estilos para el formulario*/
+
+.formulario {
+  background-color: $colorAcentuacion;
+  //width: min(70rem, 100%);
+  max-width: 70rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-bottom: 3rem;
+
+  .formulario__campo {
+    margin-bottom: 1rem;
+    padding: 2rem;
+
+    .formulario__campo--inputText {
+      width: 100%;
+      border: none;
+      padding: 1.5rem 1rem;
+      border-radius: 0.5rem;
+      font-family: "Poppins", sans-serif;
+      color: $colorNegro;
+      font-weight: normal;
+      font-size: 1.5rem;
+    }
+
+    label {
+      color: $colorNegro;
+      font-weight: normal;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+  }
+
+  .formulario__campo--campoRadio {
+    margin-bottom: 1rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "masculino femenino otro"
+      "radiomasc radiofem radiootro";
+    justify-items: center;
+    align-items: center;
+
+    label {
+      color: $colorNegro;
+      font-weight: normal;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+    }
+
+  }
+
+  .formulario__campo--masculino {
+    grid-area: masculino;
+    justify-items: center;
+  }
+
+  .formulario__campo--radioMasculino {
+    grid-area: radiomasc;
+  }
+
+  .formulario__campo--femenino {
+    grid-area: femenino;
+  }
+
+  .formulario__campo--radioFemenino {
+    grid-area: radiofem;
+  }
+
+  .formulario__campo--otro {
+    grid-area: otro;
+  }
+
+  .formulario__campo--radioOtro {
+    grid-area: radiootro;
+  }
+
+  .formulario__campoNews {
+    color: $colorNegro;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-column: 1/ 3;
+    grid-row: 4/ 5;
+  }
+}
