@@ -373,4 +373,16 @@ mejoras
     - 10. Especificacion de Idioma
     - Utilizacion de favicon
 
+#==================================Devolucion 3ra entrega===========================================#
+Te dejo algunas sugerencias para ir perfeccionando:
+Sobre el menú: al volverse responsive, fijate que tiene un pequeño defecto que es que al tocar el 
+menú hamburguesa se desplaza hacia el centro.
+Al form .login te conviene ponerle un align-items: flex-end; para que te quede debajo del icono. 
+Por una cuestión de UX, es conveniente que el objetivo no esté muy lejos del botón 
+A modo de sugerencia: también por cuestiones de experiencia de usuario, el formulario convendría 
+que estuviera en una columna (y el checbox de "Deseo recibir el Newsletter" a la izquierda)
+Finalmente: en tamaño para celulares fijate de achicar un poco los contenedores, que tienen 
+bastante padding y margin y te empujan el texto en una columna muy angosta y difícil de leer. 
+Un margin de 1-2 rem más o menos sería suficiente
+
 
