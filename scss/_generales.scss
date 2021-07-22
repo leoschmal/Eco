@@ -114,7 +114,7 @@ input {
   .boton {
     background-color: $colorPrimarioOscuro;
     color: $colorTextoPrimarioClaro;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -122,7 +122,7 @@ input {
     text-align: center;
     width: 100%;
     border: none;
-    margin: 1rem;
+    margin: 1rem 0rem;
     transition: all 500ms;
   }
   .boton:hover {
@@ -143,34 +143,35 @@ input {
   /* Implementacion de estilos mediante CLASES*/
 .h2Subtitulo {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: normal;
   }  
   .h2SubtArtPpal {
     @include encabezados(normal , $colorTextoPrimarioClaro);
-    text-align: right;
-    font-size: 3.5rem;
+    text-align: center;
+    font-size: 2.5rem;
 
     padding-right: 3rem;
   }  
   .h2SubtArtSec {
     @include encabezados(bolder , $colorTextoPrimario);
     text-align: right;
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding-right: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
   }  
   .parrafo1 {
     @include encabezados(normal , $colorBlanco);
-    font-size: 2rem;
-    padding-right: 3rem;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
     padding-bottom: 2rem;
   }  
   .parrafo2 {
     @include encabezados(normal , $colorTextoPrimario);
-    padding-right: 3rem;
+    padding-right: 0.5rem;
     padding-bottom: 1rem;
+    font-size: 1.5rem;
   }
   
   /*Clases referidas a imagenes*/

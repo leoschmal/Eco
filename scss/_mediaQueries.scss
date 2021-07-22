@@ -1,3 +1,8 @@
+//Creo un mixin para estilos comunes en los encabezados
+@mixin encabezados($weight, $color){
+  font-weight: $weight;
+  color: $color;
+}
 /*===============================MEDIA QUERIES=============================*/
 @media (min-width: 768px) {
     .ulNavLat {
@@ -27,7 +32,7 @@
       gap: 3rem;
     }
     .boton {
-      margin: 1rem;
+      margin: 1rem 0rem;
     }
   }
   @media (min-width: 480px) {
@@ -91,3 +96,53 @@
         "firma firma firma firma firma firma firma firma";
     }
   }
+ //medias para secciones 
+@media (min-width:768px){
+  .seccionPpal {
+    background-color: $colorAcentuacion;
+    padding: 1rem 3rem;
+    padding-bottom: 1rem;
+    margin: 3rem;
+    border-radius: 1.5rem;
+    background-image: linear-gradient($colorAcentuacion,
+        $colorDivision);
+  }
+  .seccionSec {
+    background-color: $colorPrimarioClaro;
+    padding: 1rem;
+    margin: 5rem;
+    border-radius: 1.5rem;
+  }
+  .parrafo1 {
+    @include encabezados(normal , $colorBlanco);
+    font-size: 2rem;
+    padding-right: 0.5rem;
+    padding-bottom: 2rem;
+  }  
+  .parrafo2 {
+    @include encabezados(normal , $colorTextoPrimario);
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .h2Subtitulo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: normal;
+  }  
+  .h2SubtArtPpal {
+    @include encabezados(normal , $colorTextoPrimarioClaro);
+    text-align: right;
+    font-size: 3rem;
+
+    padding-right: 3rem;
+  }  
+  .h2SubtArtSec {
+    @include encabezados(bolder , $colorTextoPrimario);
+    text-align: right;
+    font-size: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  } 
+}
