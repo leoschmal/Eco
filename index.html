@@ -7,6 +7,24 @@ Sitio WEB de Negocio de Limpieza (Negocio Real de un Amigo)-->
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WHTGXDL');
+  </script>
+  <!-- End Google Tag Manager -->
   <meta name="google-site-verification" content="vvtekRHmqIm61lrV81L_w40tZr18_uHq_Q5BSYasTY0" />
   <meta name="description"
     content="Servicio de Limpieza y Desinfeccion integral para empresas y hogares. Nos ubicamos en la ciudad de Paraná, Entre Ríos, Argentina. Trabajamos con todas las tarjetas de crédito. Especializados en desinfección contra el Covid-19.">
@@ -19,15 +37,30 @@ Sitio WEB de Negocio de Limpieza (Negocio Real de un Amigo)-->
   <!--<link rel="stylesheet" href="normalize.css" />-->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTNG5S0BD6"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E8TNX3QZBX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics 1-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8TNX3QZBX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-E8TNX3QZBX');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E8TNX3QZBX');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics 2-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D8PJ1Y5WKN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D8PJ1Y5WKN');
+  </script>
   <!--FUENTES (MATE SC-NUNITO-POPPINS)-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,6 +74,10 @@ Sitio WEB de Negocio de Limpieza (Negocio Real de un Amigo)-->
 <!--BODY-->
 
 <body class="colorBody">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHTGXDL" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <!--navbar booststrap-->
   <nav class="navbar navbar-expand-lg navbar-light sticky-top navegacion sombra">
     <div class="container-fluid">
@@ -376,59 +413,55 @@ Sitio WEB de Negocio de Limpieza (Negocio Real de un Amigo)-->
                     localidad. </p>
 
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="card" style="width:15rem; border: 1px solid transparent">
+                    <div class="row d-flex justify-content-around">
+                      <div class="card" style="width:13rem; border: 1px solid transparent">
                         <div class="col"><img src="media/img/cuidados/aislate.png" alt="aislate" class="anchoImg3">
                         </div>
                         <div>
                           <h3 class="text-center">si tenés sintomas, aislate</h3>
                         </div>
                       </div>
-                      <div class="card" style="width:15rem;  border: 1px solid transparent">
+                      <div class="card" style="width:13rem;  border: 1px solid transparent">
                         <div class="col"><img src="media/img/cuidados/barbijo.png" alt="barbijo" class="anchoImg3">
                         </div>
-                        <div>
+                        <div class="d-flex align-items-center">
                           <h3 class="text-center">Usá Barbijo</h3>
                         </div>
                       </div>
-                      <div class="card" style="width:15rem;  border: 1px solid transparent">
+                      <div class="card" style="width:13rem;  border: 1px solid transparent">
                         <div class="col"><img src="media/img/cuidados/distancia.png" alt="distancia" class="anchoImg3">
                         </div>
                         <div>
                           <h3 class="text-center">Mantené distancia</h3>
                         </div>
                       </div>
-                    </div>
 
-
-                    <div class="row">
-                      <div class="card" style="width:15rem; border: 1px solid transparent">
+                      <div class="card" style="width:13rem; border: 1px solid transparent">
                         <div class="col"><img src="media/img/cuidados/lavado-manos.png" alt="manos" class="anchoImg3">
                           <h3 class="text-center">Lavate las Manos</h3>
                         </div>
                       </div>
-                      <div class="card" style="width:15rem; border: 1px solid transparent">
+                      <div class="card" style="width:13rem; border: 1px solid transparent">
                         <div class="col"><img src="media/img/cuidados/reuniones.png" alt="reuniones" class="anchoImg3">
                           <h3 class="text-center">Evitá reuniones en espacios cerrados</h3>
                         </div>
                       </div>
-                      <div class="card" style="width:15rem; border: 1px solid transparent">
+                      <div class="card" style="width:13rem; border: 1px solid transparent">
                         <div class="col"><img src="media/img/cuidados/tocar-cara.png" alt="cara" class="anchoImg3">
                           <h3 class="text-center">No te toques la cara</h3>
                         </div>
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="card" style="width:15rem; border: 1px solid transparent">
+
+                      <div class="card" style="width:13rem; border: 1px solid transparent">
                         <div class="col"><img src="media/img/cuidados/toser.png" alt="toser" class="anchoImg3"></div>
                         <h3 class="text-center">Tosé y estornudá en el pliegue del codo</h3>
                       </div>
-                      <div class="card" style="width:15rem; border: 1px solid transparent">
+                      <div class="card" style="width:13rem; border: 1px solid transparent">
                         <div class="col"><img src="media/img/cuidados/vajilla.png" alt="vajilla" class="anchoImg3">
                         </div>
                         <h3 class="text-center">No compartas el mate ni la vajilla</h3>
                       </div>
-                      <div class="card" style="width:15rem; border: 1px solid transparent">
+                      <div class="card" style="width:13rem; border: 1px solid transparent">
                         <div class="col"><img src="media/img/cuidados/ventilar.png" alt="ventilar" class="anchoImg3">
                         </div>
                         <h3 class="text-center">Ventilá los ambientes de manera constante y cruzada</h3>
@@ -620,32 +653,33 @@ Sitio WEB de Negocio de Limpieza (Negocio Real de un Amigo)-->
         <div class="container">
           <div class=" row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
-            <div class=" card" >
-              <img src="media/img/certi1.png" class="galImg" alt="msc">
-              <div class="card-body">
-                <p class="card-text">Certificados por MSC en Normas ISO 45001 e ISO 9001</p>
+              <div class=" card">
+                <img src="media/img/certi1.png" class="galImg" alt="msc">
+                <div class="card-body">
+                  <p class="card-text">Certificados por MSC en Normas ISO 45001 e ISO 9001</p>
+                </div>
               </div>
-            </div>
             </div>
             <div class="col">
-            <div class=" card" >
-              <img src="media/img/anmatlogo2.png" class="galImg" alt="anmat">
-              <div class="card-body">
-                <p class="card-text">Cumplimos con todas las normativas de ANMAT respecto de los productos que
-                  utilizamos.</p>
+              <div class=" card">
+                <img src="media/img/anmatlogo2.png" class="galImg" alt="anmat">
+                <div class="card-body">
+                  <p class="card-text">Cumplimos con todas las normativas de ANMAT respecto de los productos que
+                    utilizamos.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card" >
-              <img src="media/img/Nuevo_Escudo_de_Paraná.png" class="galImg" alt="parana">
-              <div class="card-body">
-                <p class="card-text">Contamos con todas las certificaciones y autorizaciones dispuestas por el Municipio
-                  de la Ciudad de Paraná.</p>
+            <div class="col">
+              <div class="card">
+                <img src="media/img/Nuevo_Escudo_de_Paraná.png" class="galImg" alt="parana">
+                <div class="card-body">
+                  <p class="card-text">Contamos con todas las certificaciones y autorizaciones dispuestas por el
+                    Municipio
+                    de la Ciudad de Paraná.</p>
+                </div>
               </div>
             </div>
-          </div>
-          
+
           </div>
         </div>
       </article>

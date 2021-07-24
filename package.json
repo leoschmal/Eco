@@ -9,7 +9,7 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "clean-css":"purgecss --css css/prueba.css --content index.html pages/*.html --output css/purg.css"
   },
-  "author": "",
+  "author": "Leonardo Schmal",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^6.0.1",

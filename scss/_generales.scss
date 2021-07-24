@@ -31,12 +31,12 @@ nav {
 //Uso de for e if para dar estilos a los headings (h1 al h3)
 @for $i from 1 through 3{
   h#{$i}{
-    font-size: 6rem / $i;
+    font-size: (6rem / $i)-1;
     @include encabezados(normal , $colorTextoPrimarioClaro);
     @if $i==1{      
       font-family:$fuentePrimaria;      
       text-align: center;
-      letter-spacing: 2rem;
+      letter-spacing: 1rem;
     }@else if $i==2{
      font-family:$fuenteSecundaria;
     }@else if $i==3{

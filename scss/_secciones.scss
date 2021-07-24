@@ -252,20 +252,19 @@
 
   .tabla__hijoTabla {
     display: flex;
+    width: 100%;
     background-color: $colorDivision;
     height: 100%;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    
 
     .textoTabla {
-      padding: 0px 2rem;
+      padding: 0.2rem;
       width: 100%;
       color: $colorNegro;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
-
-
   }
 
   .tabla__hijoTabla--encabezado {
