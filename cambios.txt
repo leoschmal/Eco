@@ -384,5 +384,37 @@ que estuviera en una columna (y el checbox de "Deseo recibir el Newsletter" a la
 Finalmente: en tamaño para celulares fijate de achicar un poco los contenedores, que tienen 
 bastante padding y margin y te empujan el texto en una columna muy angosta y difícil de leer. 
 Un margin de 1-2 rem más o menos sería suficiente
+#==================================4ta Entrega Proyecto Final========================================#
+Cambios sugeridos (Devolucion 3er Entrega)
+- Eliminacion del Form de Login (decidi que al no tener funcion real, en el proyecto real.... y 
+haberlo hecho para los desafíos ya no tiene sentido que esté)
+- Achique contenedores y fuentes en tamaño mobile, ya que estaban muy grandes, la tabla de productos 
+se rompia completa y en las demas secciones quedaba feo para leer
 
-
+Cambios Aplicados:
+ - Reemplacé los lorem pendientes por el texto real
+ - acomodé tamaño de imagenes
+ - Aplique loading="lazy" en imagenes y videos para mejorar la carga y rendimiento de la pagina
+ - Aplique preload (head en header de index y servicios) para precarga de archivos grandes, en este caso 
+ los videos.
+ - creacion de controlador de versiones Git, aplicacion de gitignore
+ - Subida a repo de github
+ - aplicacion de metaetiquetas de Open Graph.
+ - creacion de archivo sitemap.xml
+ - sincronizacion del repositorio con Vercel, hosteo en Vercel.
+ - dominio propio, delegado al hosting.
+ - en Herramientas de Google:
+        - Google Search Console: creacion de propiedad, adicion de sitemap para indexacion
+        - Google Analytics: adicion de tags en html para sincronizacion
+        - archivo html en directorio raiz para reconocimiento del sitio por parte de google
+- Scripts de npm: implementacion de la libreria PurgeCSS.
+        - en archivo package.json se agrega implementacion de script. El script busca en los 
+        html y css indicados, las clases css no utilizadas, y las elimina, limpiando de esta 
+        manera clases innesesarias creadas durante el proceso de desarrollo, mejorando así 
+        el rendimiento de la pagina. En mi caso, pase de tener 800 lineas en mi css a tener 
+        600 lineas aprox.
+- SEO: Implementacion de etiquetas (desafio SEO).
+- Creacion de 404.html.
+- Reformulacion de footer (no me gustaba en responsive, lo deje en dos columnas de iconos)
+- Ortografía y gramática revisada.
+- Saqué texto (mucho, parecía un manual mas que un sitio, y la gente ya no lee jaja)
