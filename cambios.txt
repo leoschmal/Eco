@@ -412,9 +412,11 @@ Cambios Aplicados:
         html y css indicados, las clases css no utilizadas, y las elimina, limpiando de esta 
         manera clases innesesarias creadas durante el proceso de desarrollo, mejorando así 
         el rendimiento de la pagina. En mi caso, pase de tener 800 lineas en mi css a tener 
-        600 lineas aprox.
+        600 lineas aprox. Al script le puse clean-css y se ejecuta con "npm run clean-css"
 - SEO: Implementacion de etiquetas (desafio SEO).
 - Creacion de 404.html.
 - Reformulacion de footer (no me gustaba en responsive, lo deje en dos columnas de iconos)
 - Ortografía y gramática revisada.
 - Saqué texto (mucho, parecía un manual mas que un sitio, y la gente ya no lee jaja)
+- https://ecolimpiezaparana.com.ar 
+
