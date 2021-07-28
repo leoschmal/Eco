@@ -76,7 +76,7 @@
     margin: 0.5rem;
     justify-content: center;
     align-items:flex-end;
-    .login__input {
+    .loginInput {
         width: 100%;
         border: 1px black;
         padding: 0rem 0rem;
@@ -89,7 +89,7 @@
         text-align: center;
         margin: 0.1rem 0rem;
     }
-    .login__boton {
+    .loginBoton {
         background-color: $colorPrimario;
         color: $colorTextoPrimarioClaro;
         padding: 0rem 0rem;

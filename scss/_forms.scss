@@ -10,11 +10,11 @@
   padding: 2rem;
   margin-bottom: 3rem;
 
-  .formulario__campo {
+  .formularioCampo {
     margin-bottom: 1rem;
     padding: 2rem;
 
-    .formulario__campo--inputText {
+    .formularioCampoInputText {
       width: 100%;
       border: none;
       padding: 1.5rem 1rem;
@@ -33,7 +33,7 @@
     }
   }
 
-  .formulario__campo--campoRadio {
+  .formularioCampoCampoRadio {
     margin-bottom: 1rem;
     padding: 2rem;
     display: grid;
@@ -53,32 +53,32 @@
 
   }
 
-  .formulario__campo--masculino {
+  .formularioCampoMasculino {
     grid-area: masculino;
     justify-items: center;
   }
 
-  .formulario__campo--radioMasculino {
+  .formularioCampoRadioMasculino {
     grid-area: radiomasc;
   }
 
-  .formulario__campo--femenino {
+  .formularioCampoFemenino {
     grid-area: femenino;
   }
 
-  .formulario__campo--radioFemenino {
+  .formularioCampoRadioFemenino {
     grid-area: radiofem;
   }
 
-  .formulario__campo--otro {
+  .formularioCampoOtro {
     grid-area: otro;
   }
 
-  .formulario__campo--radioOtro {
+  .formularioCampoRadioOtro {
     grid-area: radiootro;
   }
 
-  .formulario__campoNews {
+  .formularioCampoNews {
     color: $colorNegro;
     margin-bottom: 1rem;
     font-weight: normal;

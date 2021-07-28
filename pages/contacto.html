@@ -82,39 +82,39 @@
     <section>
       <form class="formulario sombra">
         <div class="contenedorCampos">
-          <div class="formulario__campo">
+          <div class="formularioCampo">
             <label for="nombre">Nombre</label>
-            <input class="formulario__campo--inputText" type="text" name="nombre" id="nombre"
+            <input class="formularioCampoInputText" type="text" name="nombre" id="nombre"
               placeholder="  ingresa tu nombre" maxlength="30" required />
           </div>
-          <div class="formulario__campo">
+          <div class="formularioCampo">
             <label for="apellido">Apellido</label>
-            <input class="formulario__campo--inputText" type="text" name="apellido" id="apellido"
+            <input class="formularioCampoInputText" type="text" name="apellido" id="apellido"
               placeholder="  ingresa tu apellido" maxlength="30" required />
           </div>
-          <div class="formulario__campo--campoRadio">
-            <label class="formulario__campo--masculino" for="m">Masculino</label>
-            <input class="formulario__campo--inputText formulario__campo--radioMasculino" type="radio" id="m"
+          <div class="formularioCampoCampoRadio">
+            <label class="formularioCampoMasculino" for="m">Masculino</label>
+            <input class="formularioCampoInputText formularioCampoRadioMasculino" type="radio" id="m"
               name="sexo" value="m" />
-            <label class="formulario__campo--femenino" for="f">Femenino</label>
-            <input class="inputText formulario__campo--radioFemenino" type="radio" id="f" name="sexo" value="f" />
-            <label class="formulario__campo--otro" for="o">Otro</label>
-            <input class="formulario__campo--inputText formulario__campo--radioOtro" type="radio" id="o" name="sexo"
+            <label class="formularioCampoFemenino" for="f">Femenino</label>
+            <input class="inputText formularioCampoRadioFemenino" type="radio" id="f" name="sexo" value="f" />
+            <label class="formularioCampoOtro" for="o">Otro</label>
+            <input class="formularioCampoInputText formularioCampoRadioOtro" type="radio" id="o" name="sexo"
               value="o" />
           </div>
-          <div class="formulario__campo">
+          <div class="formularioCampo">
             <label for="email">e-Mail</label>
-            <input class="formulario__campo--inputText" type="email" name="email" id="email"
+            <input class="formularioCampoInputText" type="email" name="email" id="email"
               placeholder="  ingresa tu correo" required />
           </div>
-          <div class="formulario__campo">
+          <div class="formularioCampo">
             <label for="comentarios">Dejanos tu mensaje:</label>
-            <textarea class="formulario__campo--inputText" name="comentarios" id="comentarios" rows="4" cols="50">
+            <textarea class="formularioCampoInputText" name="comentarios" id="comentarios" rows="4" cols="50">
               </textarea>
           </div>
-          <div class="formulario__campo">
+          <div class="formularioCampo">
             <label for="pais">País</label>
-            <select class="formulario__campo--inputText" name="pais" id="pais">
+            <select class="formularioCampoInputText" name="pais" id="pais">
               <option value="argentina">Argentina</option>
               <option value="chile">Chile</option>
               <option value="uruguay">Uruguay</option>
@@ -126,15 +126,15 @@
               <option value="otro">Otro...</option>
             </select>
           </div>
-          <div class="formulario__campoNews">
+          <div class="formularioCampoNews">
             <label for="newsletter">Deseo recibir los Newsletter</label>
-            <input class="formulario__campo--inputText" type="checkbox" name="newsletter" id="newsletter" value="1" />
+            <input class="formularioCampoInputText" type="checkbox" name="newsletter" id="newsletter" value="1" />
           </div>
         </div>
         <!--fin contenedor campos-->
         <div class="contenedorBotones">
           <input class="boton sombra" type="submit" value="Enviar" />
-          <input class="boton sombra" type="reset" value="Borrar" />
+          <input class="botonGris sombra" type="reset" value="Borrar" />
         </div>
       </form>
     </section>

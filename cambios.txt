@@ -420,3 +420,9 @@ Cambios Aplicados:
 - Saqué texto (mucho, parecía un manual mas que un sitio, y la gente ya no lee jaja)
 - https://ecolimpiezaparana.com.ar 
 
+#==================================Entrega Proyecto Final========================================#
+Cambios Aplicados:
+    - Cambio color de boton Limpiar en formulario de contacto por uno con menos intensidad, 
+    para que resalte el de enviar.
+    - Unifico criterio de nombres de clases, lo que tenia en BEM lo paso a camel case.
+    

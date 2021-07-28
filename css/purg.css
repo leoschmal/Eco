@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;900&family=Poppins:wght@100;200;400;700&display=swap");
 /*Reseteo general de margin y padding*/
 * {
@@ -109,7 +110,25 @@ input {
   margin: 1rem 0rem;
   transition: all 500ms; }
 
+.botonGris {
+  background-color: #009688;
+  color: #ffffff;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  text-align: center;
+  width: 100%;
+  border: none;
+  margin: 1rem 0rem;
+  transition: all 500ms; }
+
 .boton:hover {
+  cursor: pointer;
+  transform: scale(1.05, 1.05); }
+
+.botonGris:hover {
   cursor: pointer;
   transform: scale(1.05, 1.05); }
 
@@ -169,6 +188,39 @@ nav div ul li a:hover {
 .centrado {
   text-align: center;
   justify-content: center; }
+
+/*boton sticky SUBIR*/
+.btn-flotante {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  /* Cambiar el tamaño de la tipografia */
+  text-transform: uppercase;
+  /* Texto en mayusculas */
+  font-weight: normal;
+  /* Fuente en negrita o bold */
+  color: #ffffff;
+  /* Color del texto */
+  border-radius: 5rem;
+  /* Borde del boton */
+  letter-spacing: 0.2rem;
+  /* Espacio entre letras */
+  background-color: #1976d2;
+  /* Color de fondo */
+  padding: 20px 20px;
+  /* Relleno del boton */
+  position: fixed;
+  bottom: 2.6rem;
+  left: 3rem;
+  transition: all 300ms ease 0ms;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  text-decoration: none; }
+
+.btn-flotante:hover {
+  background-color: #2196f3;
+  /* Color de fondo al pasar el cursor */
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-7px); }
 
 .header {
   display: flex;
@@ -296,21 +348,21 @@ nav div ul li a:hover {
   padding: 0rem;
   margin: 0.5rem;
   justify-content: space-around; }
-  .staff .staff__staffSet {
+  .staff .staffSet {
     width: 40rem;
     border-radius: 0.5rem;
     background-color: #009688;
     margin: 0.5rem; }
-    .staff .staff__staffSet .staff__staffSet--imgStaff {
+    .staff .staffSet .staffSetImgStaff {
       width: 15rem;
       height: 20rem; }
-    .staff .staff__staffSet .staff__staffSet--parrafoStaff {
+    .staff .staffSet .staffSetParrafo {
       padding: 3rem;
       color: #212121;
       font-weight: bold;
       padding-right: 3rem;
       padding-bottom: 1rem; }
-    .staff .staff__staffSet .staff__staffSet--tituloStaff {
+    .staff .staffSet .staffSetTitulo {
       text-align: center;
       font-weight: bolder;
       padding-top: 2rem; }
@@ -335,14 +387,14 @@ nav div ul li a:hover {
     background-color: #bbdefb;
     padding: 0.5rem;
     margin: 1rem; }
-    .contMision .mision .mision__imgMision {
+    .contMision .mision .misionImg {
       width: 15rem;
       height: 15rem;
       padding: 1rem;
       transition: all 1s; }
-      .contMision .mision .mision__imgMision:hover {
+      .contMision .mision .misionImg:hover {
         transform: scale(1.2, 1.2); }
-    .contMision .mision .mision__parrafoMision {
+    .contMision .mision .misionParrafo {
       color: #212121;
       font-weight: normal;
       padding: 2rem 2rem; }
@@ -355,7 +407,7 @@ nav div ul li a:hover {
   padding: 1rem;
   margin: 0.5rem;
   justify-content: space-around; }
-  .entrevistas .entrevistas__modulo {
+  .entrevistas .entrevistasModulo {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -365,7 +417,7 @@ nav div ul li a:hover {
     background-color: #bbdefb;
     padding: 0.5rem;
     margin: 1rem; }
-  .entrevistas .entrevistas__modulo--parrafo {
+  .entrevistas .entrevistasModuloParrafo {
     padding: 0rem 2rem;
     margin-bottom: 2rem;
     color: #212121;
@@ -381,7 +433,7 @@ nav div ul li a:hover {
   padding: 1rem;
   margin: 0.5rem;
   justify-content: space-around; }
-  .servicios .servicios__modulo {
+  .servicios .serviciosModulo {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -392,12 +444,12 @@ nav div ul li a:hover {
     background-color: #009688;
     padding: 0.5rem;
     margin: 1rem; }
-    .servicios .servicios__modulo .servicios__modulo--imgServicios {
+    .servicios .serviciosModulo .serviciosModuloImg {
       width: 20rem;
       height: 20rem;
       padding: 2rem;
       transition: all 1s; }
-      .servicios .servicios__modulo .servicios__modulo--imgServicios:hover {
+      .servicios .serviciosModulo .serviciosModuloImg:hover {
         transform: scale(1.1, 1.1); }
 
 /*Tabla productos aplico Grid*/
@@ -410,53 +462,53 @@ nav div ul li a:hover {
   margin: 0px;
   padding: 1rem;
   width: 100%; }
-  .tabla .tabla__hijoTabla {
+  .tabla .hijoTabla {
     display: flex;
     width: 100%;
     background-color: #bdbdbd;
     height: 100%;
     align-items: center;
     justify-content: center; }
-    .tabla .tabla__hijoTabla .textoTabla {
+    .tabla .hijoTabla .textoTabla {
       padding: 0.2rem;
       width: 100%;
       color: #000;
       font-size: 1.5rem; }
-  .tabla .tabla__hijoTabla--encabezado {
+  .tabla .hijoTablaEncabezado {
     text-align: center;
     background-color: #2196f3 !important;
     font-size: 2rem;
     width: 100%; }
-  .tabla .tabla__hijoTabla--principio {
+  .tabla .hijoTablaPrincipio {
     grid-area: principio;
     border-radius: 1rem; }
-  .tabla .tabla__hijoTabla--usos {
+  .tabla .hijoTablaUsos {
     grid-area: usos;
     border-radius: 1rem; }
-  .tabla .tabla__hijoTabla--caracteristicas {
+  .tabla .hijoTablaCaracteristicas {
     grid-area: caract;
     border-radius: 1rem; }
-  .tabla .tabla__hijoTabla--uvc {
+  .tabla .hijoTablaUvc {
     grid-area: uvc;
     border-radius: 1rem;
     text-align: center; }
-  .tabla .tabla__hijoTabla--amonio {
+  .tabla .hijoTablaAmonio {
     grid-area: amonio;
     border-radius: 1rem;
     text-align: center; }
-  .tabla .tabla__hijoTabla--usoUvc {
+  .tabla .hijoTablaUsoUvc {
     grid-area: usosuvc;
     border-radius: 1rem;
     text-align: justify; }
-  .tabla .tabla__hijoTabla--usoAmonio {
+  .tabla .hijoTablaUsoAmonio {
     grid-area: usoamonio;
     border-radius: 1rem;
     text-align: justify; }
-  .tabla .tabla__hijoTabla--caractUvc {
+  .tabla .hijoTablaCaractUvc {
     grid-area: caractuvc;
     border-radius: 1rem;
     text-align: justify; }
-  .tabla .tabla__hijoTabla--caractAmonio {
+  .tabla .hijoTablaCaractAmonio {
     grid-area: caractamonio;
     border-radius: 1rem;
     text-align: justify; }
@@ -464,17 +516,17 @@ nav div ul li a:hover {
 .articulo {
   margin: 0;
   padding: 0; }
-  .articulo .articulo__titulo {
+  .articulo .articuloTitulo {
     margin: 0;
     padding: 0; }
-  .articulo .articulo__parrafo {
+  .articulo .articuloParrafo {
     margin: 0;
     padding: 0; }
-  .articulo .articulo__img {
+  .articulo .articuloImg {
     margin: 0;
     padding: 0;
     border-radius: 10rem; }
-    .articulo .articulo__img .articulo__img--centrado {
+    .articulo .articuloImg .articuloImgCentrado {
       text-align: center;
       justify-content: center; }
 
@@ -487,10 +539,10 @@ nav div ul li a:hover {
   margin: 0 auto;
   padding: 2rem;
   margin-bottom: 3rem; }
-  .formulario .formulario__campo {
+  .formulario .formularioCampo {
     margin-bottom: 1rem;
     padding: 2rem; }
-    .formulario .formulario__campo .formulario__campo--inputText {
+    .formulario .formularioCampo .formularioCampoInputText {
       width: 100%;
       border: none;
       padding: 1.5rem 1rem;
@@ -499,12 +551,12 @@ nav div ul li a:hover {
       color: #000;
       font-weight: normal;
       font-size: 1.5rem; }
-    .formulario .formulario__campo label {
+    .formulario .formularioCampo label {
       color: #000;
       font-weight: normal;
       margin-bottom: 0.5rem;
       display: block; }
-  .formulario .formulario__campo--campoRadio {
+  .formulario .formularioCampoCampoRadio {
     margin-bottom: 1rem;
     padding: 2rem;
     display: grid;
@@ -512,25 +564,25 @@ nav div ul li a:hover {
     grid-template-areas: "masculino femenino otro" "radiomasc radiofem radiootro";
     justify-items: center;
     align-items: center; }
-    .formulario .formulario__campo--campoRadio label {
+    .formulario .formularioCampoCampoRadio label {
       color: #000;
       font-weight: normal;
       margin-bottom: 0.5rem;
       display: inline-block; }
-  .formulario .formulario__campo--masculino {
+  .formulario .formularioCampoMasculino {
     grid-area: masculino;
     justify-items: center; }
-  .formulario .formulario__campo--radioMasculino {
+  .formulario .formularioCampoRadioMasculino {
     grid-area: radiomasc; }
-  .formulario .formulario__campo--femenino {
+  .formulario .formularioCampoFemenino {
     grid-area: femenino; }
-  .formulario .formulario__campo--radioFemenino {
+  .formulario .formularioCampoRadioFemenino {
     grid-area: radiofem; }
-  .formulario .formulario__campo--otro {
+  .formulario .formularioCampoOtro {
     grid-area: otro; }
-  .formulario .formulario__campo--radioOtro {
+  .formulario .formularioCampoRadioOtro {
     grid-area: radiootro; }
-  .formulario .formulario__campoNews {
+  .formulario .formularioCampoNews {
     color: #000;
     margin-bottom: 1rem;
     font-weight: normal;

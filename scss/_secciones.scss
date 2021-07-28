@@ -92,19 +92,18 @@
   margin: 0.5rem;
   justify-content: space-around;
 
-  .staff__staffSet {
+  .staffSet {
     width: 40rem;
     border-radius: 0.5rem;
     background-color: $colorAcentuacion;
     margin: 0.5rem;
-    
 
-    .staff__staffSet--imgStaff {
+    .staffSetImgStaff {
       width: 15rem;
       height: 20rem;
     }
 
-    .staff__staffSet--parrafoStaff {
+    .staffSetParrafo {
       padding: 3rem;
       color: $colorTextoPrimario;
       font-weight: bold;
@@ -112,18 +111,18 @@
       padding-bottom: 1rem;
     }
 
-    .staff__staffSet--tituloStaff {
+    .staffSetTitulo {
       text-align: center;
       font-weight: bolder;
       padding-top: 2rem;
     }
   }
-
 }
 
 /*estilos para Seccion MisionValoresVision(Quienes Somos)*/
 .contMision {
   background-color: $colorBlanco;
+
   .flexMision {
     display: flex;
     flex-wrap: wrap;
@@ -144,7 +143,7 @@
     padding: 0.5rem;
     margin: 1rem;
 
-    .mision__imgMision {
+    .misionImg {
       width: 15rem;
       height: 15rem;
       padding: 1rem;
@@ -155,16 +154,13 @@
       }
     }
 
-    .mision__parrafoMision {
+    .misionParrafo {
       color: $colorTextoPrimario;
       font-weight: normal;
       padding: 2rem 2rem;
     }
   }
 }
-
-
-
 
 /*estilos para Seccion Entrevistas(productos.html)*/
 .entrevistas {
@@ -175,7 +171,7 @@
   margin: 0.5rem;
   justify-content: space-around;
 
-  .entrevistas__modulo {
+  .entrevistasModulo {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -186,8 +182,7 @@
     padding: 0.5rem;
     margin: 1rem;
   }
-
-  .entrevistas__modulo--parrafo {
+  .entrevistasModuloParrafo {
     padding: 0rem 2rem;
     margin-bottom: 2rem;
     color: $colorTextoPrimario;
@@ -196,7 +191,6 @@
     padding-bottom: 1rem;
   }
 }
-
 
 /*estilos para Seccion Servicios(servicios.html)*/
 .servicios {
@@ -207,7 +201,7 @@
   margin: 0.5rem;
   justify-content: space-around;
 
-  .servicios__modulo {
+  .serviciosModulo {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -220,7 +214,7 @@
     padding: 0.5rem;
     margin: 1rem;
 
-    .servicios__modulo--imgServicios {
+    .serviciosModuloImg {
       width: 20rem;
       height: 20rem;
       padding: 2rem;
@@ -250,14 +244,14 @@
   padding: 1rem;
   width: 100%;
 
-  .tabla__hijoTabla {
+  .hijoTabla {
     display: flex;
     width: 100%;
     background-color: $colorDivision;
     height: 100%;
     align-items: center;
     justify-content: center;
-    
+
 
     .textoTabla {
       padding: 0.2rem;
@@ -267,59 +261,59 @@
     }
   }
 
-  .tabla__hijoTabla--encabezado {
+  .hijoTablaEncabezado {
     text-align: center;
     background-color: $colorPrimario !important;
     font-size: 2rem;
     width: 100%;
   }
 
-  .tabla__hijoTabla--principio {
+  .hijoTablaPrincipio {
     grid-area: principio;
     border-radius: 1rem;
   }
 
-  .tabla__hijoTabla--usos {
+  .hijoTablaUsos {
     grid-area: usos;
     border-radius: 1rem;
   }
 
-  .tabla__hijoTabla--caracteristicas {
+  .hijoTablaCaracteristicas {
     grid-area: caract;
     border-radius: 1rem;
   }
 
-  .tabla__hijoTabla--uvc {
+  .hijoTablaUvc {
     grid-area: uvc;
     border-radius: 1rem;
     text-align: center;
   }
 
-  .tabla__hijoTabla--amonio {
+  .hijoTablaAmonio {
     grid-area: amonio;
     border-radius: 1rem;
     text-align: center;
   }
 
-  .tabla__hijoTabla--usoUvc {
+  .hijoTablaUsoUvc {
     grid-area: usosuvc;
     border-radius: 1rem;
     text-align: justify;
   }
 
-  .tabla__hijoTabla--usoAmonio {
+  .hijoTablaUsoAmonio {
     grid-area: usoamonio;
     border-radius: 1rem;
     text-align: justify;
   }
 
-  .tabla__hijoTabla--caractUvc {
+  .hijoTablaCaractUvc {
     grid-area: caractuvc;
     border-radius: 1rem;
     text-align: justify;
   }
 
-  .tabla__hijoTabla--caractAmonio {
+  .hijoTablaCaractAmonio {
     grid-area: caractamonio;
     border-radius: 1rem;
     text-align: justify;
@@ -331,22 +325,22 @@
   margin: 0;
   padding: 0;
 
-  .articulo__titulo {
+  .articuloTitulo {
     margin: 0;
     padding: 0;
   }
 
-  .articulo__parrafo {
+  .articuloParrafo {
     margin: 0;
     padding: 0;
   }
 
-  .articulo__img {
+  .articuloImg {
     margin: 0;
     padding: 0;
     border-radius: 10rem;
 
-    .articulo__img--centrado {
+    .articuloImgCentrado {
       text-align: center;
       justify-content: center;
     }
