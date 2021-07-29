@@ -1,103 +1,114 @@
 //Creo un mixin para estilos comunes en los encabezados
-@mixin encabezados($weight, $color){
+@mixin encabezados($weight, $color) {
   font-weight: $weight;
   color: $color;
 }
+
 /*===============================MEDIA QUERIES=============================*/
 @media (min-width: 768px) {
-    .ulNavLat {
-      width: 15%;
-      height: 100%;
-      position: fixed;
-    }
-    .liLat a {
-      text-align: left;
-    }
-    .anchoBodyIndex {
-      margin-left: 15%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .contenedorCampos {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .contenedorBotones {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 3rem;
-    }
-    .boton {
-      margin: 1rem 0rem;
-    }
-  }
-  @media (min-width: 480px) {
-    .ulMenu {
-      flex-direction: row;
-      gap: 3rem;
-    }
-  }
-  @media (min-width: 481px) and (max-width: 768px) {
-    .navPrincipal {
-      flex-direction: row;
-      position: sticky;
-      top: 0rem;
-      justify-content: center;
-    }
-  }
-  @media (min-width: 768px) {
-    .navPrincipal {
-      flex-direction: row;
-      position: sticky;
-      top: 0rem;
-      justify-content: space-between;
-    }
-  }
-  @media (min-width: 480px) and (max-width: 768px) {
-    .padreTabla {
-      grid-template-columns: 2fr 5fr 3fr;
-      grid-template-areas:
-        "principio usos caract"
-        "uvc usosuvc caractuvc"
-        "amonio usoamonio caractamonio";
-    }
-  }
-  @media (min-width: 768px) {
-    .ulNavLatServ {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 25%;
-      background-color: #f1f1f1;
-      position: fixed;
-      height: 100%;
-      overflow: hidden;
-      -webkit-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
-      -moz-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
-      box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
-    }
-    .anchoBodyServ {
-      margin-left: 25%;
-      background-color: $colorBlanco;
-    }
+  .ulNavLat {
+    width: 15%;
+    height: 100%;
+    position: fixed;
   }
 
-  @media (min-width: 768px) {
-    .contenedorFooter {
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-areas:
-        "seguinos seguinos seguinos seguinos visitanos visitanos visitanos visitanos"
-        "facebook instagram youtube linkedin mapa mapa mapa mapa"
-        "whatsapp twitter llamar mail mapa mapa mapa mapa"
-        "firma firma firma firma firma firma firma firma";
-    }
+  .liLat a {
+    text-align: left;
   }
- //medias para secciones 
-@media (min-width:768px){
+
+  .anchoBodyIndex {
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenedorCampos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .contenedorBotones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .boton {
+    margin: 1rem 0rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .ulMenu {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .navPrincipal {
+    flex-direction: row;
+    position: sticky;
+    top: 0rem;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .navPrincipal {
+    flex-direction: row;
+    position: sticky;
+    top: 0rem;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .padreTabla {
+    grid-template-columns: 2fr 5fr 3fr;
+    grid-template-areas:
+      "principio usos caract"
+      "uvc usosuvc caractuvc"
+      "amonio usoamonio caractamonio";
+  }
+}
+
+@media (min-width: 768px) {
+  .ulNavLatServ {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
+  }
+
+  .anchoBodyServ {
+    margin-left: 25%;
+    background-color: $colorBlanco;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenedorFooter {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+      "seguinos seguinos seguinos seguinos visitanos visitanos visitanos visitanos"
+      "facebook instagram youtube linkedin mapa mapa mapa mapa"
+      "whatsapp twitter llamar mail mapa mapa mapa mapa"
+      "firma firma firma firma firma firma firma firma";
+  }
+}
+
+//medias para secciones 
+@media (min-width:768px) {
   .seccionPpal {
     background-color: $colorAcentuacion;
     padding: 1rem 3rem;
@@ -107,42 +118,66 @@
     background-image: linear-gradient($colorAcentuacion,
         $colorDivision);
   }
+
   .seccionSec {
     background-color: $colorPrimarioClaro;
     padding: 1rem;
     margin: 5rem;
     border-radius: 1.5rem;
   }
+
   .parrafo1 {
-    @include encabezados(normal , $colorBlanco);
+    @include encabezados(normal, $colorBlanco);
     font-size: 2rem;
     padding-right: 0.5rem;
     padding-bottom: 2rem;
-  }  
+  }
+
   .parrafo2 {
-    @include encabezados(normal , $colorTextoPrimario);
+    @include encabezados(normal, $colorTextoPrimario);
     padding-right: 3rem;
     padding-bottom: 1rem;
     font-size: 1.5rem;
   }
+
   .h2Subtitulo {
     text-align: center;
     font-size: 3rem;
     font-weight: normal;
-  }  
+  }
+
   .h2SubtArtPpal {
-    @include encabezados(normal , $colorTextoPrimarioClaro);
+    @include encabezados(normal, $colorTextoPrimarioClaro);
     text-align: right;
     font-size: 3rem;
 
     padding-right: 3rem;
-  }  
+  }
+
   .h2SubtArtSec {
-    @include encabezados(bolder , $colorTextoPrimario);
+    @include encabezados(bolder, $colorTextoPrimario);
     text-align: right;
     font-size: 3rem;
     padding-right: 3rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
-  } 
+  }
+}
+
+@media (min-width: 768px) {
+  /*Tabla productos aplico Grid*/
+  .tabla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas:
+      "uvc amonio"
+      "usosuvc usosamonio"
+      "caractuvc caractamonio";
+    align-items: center;
+    margin: 0px;
+    padding: 1rem;
+    width: 100%;
+
+  }
 }

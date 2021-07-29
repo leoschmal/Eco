@@ -182,6 +182,7 @@
     padding: 0.5rem;
     margin: 1rem;
   }
+
   .entrevistasModuloParrafo {
     padding: 0rem 2rem;
     margin-bottom: 2rem;
@@ -230,93 +231,102 @@
 /*Tabla productos aplico Grid*/
 .tabla {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
   grid-template-areas:
-    "principio principio"
-    "uvc amonio"
-    "usos usos"
-    "usosuvc usoamonio"
-    "caract caract"
-    "caractuvc caractamonio";
+    "uvc"
+    "usos"
+    "usosuvc"
+    "caracteristicas"
+    "caractuvc"
+    "amonio"
+    "usosamonio"
+    "caractamonio";
+  grid-template-columns: 1fr;
   align-items: center;
   margin: 0px;
   padding: 1rem;
-  width: 100%;
+  /*width: 100%;*/
+  gap: 0.5rem;
 
-  .hijoTabla {
+  .resaltada {
+    font-family: $fuentePrimaria;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .parrafo{
+    font-size: 2rem;
+  }
+
+  .hijoUvc {
     display: flex;
-    width: 100%;
-    background-color: $colorDivision;
+    background-color: $colorPrimario;
+    align-items: center;
+    grid-area: uvc;
     height: 100%;
+    border-radius: 2rem;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .hijoAmonio {
+    display: flex;
+    background-color: $colorPrimario;
+    align-items: center;
+    grid-area: amonio;
+    height: 100%;
+    border-radius: 2rem;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .hijoUsosUvc {
+    display: flex;
+    flex-direction: column;
+    background-color: $colorDivision;
     align-items: center;
     justify-content: center;
-
-
-    .textoTabla {
-      padding: 0.2rem;
-      width: 100%;
-      color: $colorNegro;
-      font-size: 1.5rem;
-    }
-  }
-
-  .hijoTablaEncabezado {
-    text-align: center;
-    background-color: $colorPrimario !important;
-    font-size: 2rem;
-    width: 100%;
-  }
-
-  .hijoTablaPrincipio {
-    grid-area: principio;
-    border-radius: 1rem;
-  }
-
-  .hijoTablaUsos {
-    grid-area: usos;
-    border-radius: 1rem;
-  }
-
-  .hijoTablaCaracteristicas {
-    grid-area: caract;
-    border-radius: 1rem;
-  }
-
-  .hijoTablaUvc {
-    grid-area: uvc;
-    border-radius: 1rem;
-    text-align: center;
-  }
-
-  .hijoTablaAmonio {
-    grid-area: amonio;
-    border-radius: 1rem;
-    text-align: center;
-  }
-
-  .hijoTablaUsoUvc {
+    padding: 1rem;
     grid-area: usosuvc;
+    height: 100%;
     border-radius: 1rem;
-    text-align: justify;
+    text-align: center;
   }
 
-  .hijoTablaUsoAmonio {
-    grid-area: usoamonio;
+  .hijoUsosAmonio {
+    display: flex;
+    flex-direction: column;
+    background-color: $colorDivision;
+    align-items: center;
+    justify-content: left;
+    padding: 1rem;
+    grid-area: usosamonio;
+    height: 100%;
     border-radius: 1rem;
-    text-align: justify;
+    text-align: center;
   }
 
-  .hijoTablaCaractUvc {
+  .hijoCaractUvc {
+    display: flex;
+    flex-direction: column;
+    background-color: $colorDivision;
+    align-items: center;
+    justify-content: left;
     grid-area: caractuvc;
+    height: 100%;
     border-radius: 1rem;
-    text-align: justify;
+    padding: 2rem;
   }
 
-  .hijoTablaCaractAmonio {
+  .hijoCaractAmonio {
+    display: flex;
+    flex-direction: column;
+    background-color: $colorDivision;
+    align-items: center;
+    justify-content: left;
     grid-area: caractamonio;
+    height: 100%;
     border-radius: 1rem;
-    text-align: justify;
+    padding: 2rem;
   }
 }
 

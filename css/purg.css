@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;900&family=Poppins:wght@100;200;400;700&display=swap");
 /*Reseteo general de margin y padding*/
 * {
@@ -191,23 +190,12 @@ nav div ul li a:hover {
 
 /*boton sticky SUBIR*/
 .btn-flotante {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
-  /* Cambiar el tamaño de la tipografia */
-  text-transform: uppercase;
-  /* Texto en mayusculas */
   font-weight: normal;
-  /* Fuente en negrita o bold */
   color: #ffffff;
-  /* Color del texto */
   border-radius: 5rem;
-  /* Borde del boton */
   letter-spacing: 0.2rem;
-  /* Espacio entre letras */
   background-color: #1976d2;
-  /* Color de fondo */
   padding: 20px 20px;
-  /* Relleno del boton */
   position: fixed;
   bottom: 2.6rem;
   left: 3rem;
@@ -455,63 +443,80 @@ nav div ul li a:hover {
 /*Tabla productos aplico Grid*/
 .tabla {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  grid-template-areas: "principio principio" "uvc amonio" "usos usos" "usosuvc usoamonio" "caract caract" "caractuvc caractamonio";
+  grid-template-areas: "uvc" "usos" "usosuvc" "caracteristicas" "caractuvc" "amonio" "usosamonio" "caractamonio";
+  grid-template-columns: 1fr;
   align-items: center;
   margin: 0px;
   padding: 1rem;
-  width: 100%; }
-  .tabla .hijoTabla {
-    display: flex;
-    width: 100%;
-    background-color: #bdbdbd;
-    height: 100%;
-    align-items: center;
-    justify-content: center; }
-    .tabla .hijoTabla .textoTabla {
-      padding: 0.2rem;
-      width: 100%;
-      color: #000;
-      font-size: 1.5rem; }
-  .tabla .hijoTablaEncabezado {
-    text-align: center;
-    background-color: #2196f3 !important;
+  /*width: 100%;*/
+  gap: 0.5rem; }
+  .tabla .resaltada {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
     font-size: 2rem;
-    width: 100%; }
-  .tabla .hijoTablaPrincipio {
-    grid-area: principio;
-    border-radius: 1rem; }
-  .tabla .hijoTablaUsos {
-    grid-area: usos;
-    border-radius: 1rem; }
-  .tabla .hijoTablaCaracteristicas {
-    grid-area: caract;
-    border-radius: 1rem; }
-  .tabla .hijoTablaUvc {
+    text-align: center; }
+  .tabla .parrafo {
+    font-size: 2rem; }
+  .tabla .hijoUvc {
+    display: flex;
+    background-color: #2196f3;
+    align-items: center;
     grid-area: uvc;
-    border-radius: 1rem;
-    text-align: center; }
-  .tabla .hijoTablaAmonio {
+    height: 100%;
+    border-radius: 2rem;
+    justify-content: center;
+    padding: 0.5rem; }
+  .tabla .hijoAmonio {
+    display: flex;
+    background-color: #2196f3;
+    align-items: center;
     grid-area: amonio;
+    height: 100%;
+    border-radius: 2rem;
+    justify-content: center;
+    padding: 0.5rem; }
+  .tabla .hijoUsosUvc {
+    display: flex;
+    flex-direction: column;
+    background-color: #bdbdbd;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    grid-area: usosuvc;
+    height: 100%;
     border-radius: 1rem;
     text-align: center; }
-  .tabla .hijoTablaUsoUvc {
-    grid-area: usosuvc;
+  .tabla .hijoUsosAmonio {
+    display: flex;
+    flex-direction: column;
+    background-color: #bdbdbd;
+    align-items: center;
+    justify-content: left;
+    padding: 1rem;
+    grid-area: usosamonio;
+    height: 100%;
     border-radius: 1rem;
-    text-align: justify; }
-  .tabla .hijoTablaUsoAmonio {
-    grid-area: usoamonio;
-    border-radius: 1rem;
-    text-align: justify; }
-  .tabla .hijoTablaCaractUvc {
+    text-align: center; }
+  .tabla .hijoCaractUvc {
+    display: flex;
+    flex-direction: column;
+    background-color: #bdbdbd;
+    align-items: center;
+    justify-content: left;
     grid-area: caractuvc;
+    height: 100%;
     border-radius: 1rem;
-    text-align: justify; }
-  .tabla .hijoTablaCaractAmonio {
+    padding: 2rem; }
+  .tabla .hijoCaractAmonio {
+    display: flex;
+    flex-direction: column;
+    background-color: #bdbdbd;
+    align-items: center;
+    justify-content: left;
     grid-area: caractamonio;
+    height: 100%;
     border-radius: 1rem;
-    text-align: justify; }
+    padding: 2rem; }
 
 .articulo {
   margin: 0;
@@ -683,3 +688,15 @@ nav div ul li a:hover {
     padding-right: 3rem;
     padding-top: 2rem;
     padding-bottom: 1rem; } }
+
+@media (min-width: 768px) {
+  /*Tabla productos aplico Grid*/
+  .tabla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas: "uvc amonio" "usosuvc usosamonio" "caractuvc caractamonio";
+    align-items: center;
+    margin: 0px;
+    padding: 1rem;
+    width: 100%; } }
