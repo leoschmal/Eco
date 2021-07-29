@@ -129,14 +129,14 @@
   .parrafo1 {
     @include encabezados(normal, $colorBlanco);
     font-size: 2rem;
-    padding-right: 0.5rem;
-    padding-bottom: 2rem;
+    padding: 0.5rem 0.5rem;
+    margin: 0;
   }
 
   .parrafo2 {
     @include encabezados(normal, $colorTextoPrimario);
-    padding-right: 3rem;
-    padding-bottom: 1rem;
+    padding: 0.5rem 0.5rem;
+    margin: 0;
     font-size: 1.5rem;
   }
 
@@ -144,20 +144,21 @@
     text-align: center;
     font-size: 3rem;
     font-weight: normal;
+    padding-bottom: 2rem;
   }
 
   .h2SubtArtPpal {
     @include encabezados(normal, $colorTextoPrimarioClaro);
-    text-align: right;
-    font-size: 3rem;
-
-    padding-right: 3rem;
-  }
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding: 3rem 0rem;
+     }
 
   .h2SubtArtSec {
     @include encabezados(bolder, $colorTextoPrimario);
-    text-align: right;
-    font-size: 3rem;
+    text-align: center;
+    font-size: 3.2rem;
     padding-right: 3rem;
     padding-top: 2rem;
     padding-bottom: 1rem;

@@ -26,7 +26,8 @@ h1 {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  letter-spacing: 1rem; }
+  letter-spacing: 1rem;
+  padding: 2rem 0rem; }
 
 h2 {
   font-size: 2rem;
@@ -94,6 +95,10 @@ li a {
 input {
   width: 10rem; }
 
+.tituloPpal {
+  font-size: 7rem;
+  font-weight: normal; }
+
 .sombra {
   -webkit-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.55);
@@ -149,36 +154,34 @@ nav div ul li a:hover {
 .h2Subtitulo {
   text-align: center;
   font-size: 3rem;
-  font-weight: normal; }
+  font-weight: normal;
+  padding-bottom: 2rem; }
 
 .h2SubtArtPpal {
   font-weight: normal;
   color: #ffffff;
   text-align: center;
   font-size: 2.5rem;
-  padding-right: 3rem; }
+  padding-bottom: 2rem; }
 
 .h2SubtArtSec {
   font-weight: bolder;
   color: #212121;
-  text-align: right;
+  text-align: center;
   font-size: 3rem;
-  padding-right: 3rem;
-  padding-top: 0rem;
-  padding-bottom: 0rem; }
+  padding: 1rem 0.5rem; }
 
 .parrafo1 {
   font-weight: normal;
   color: #fff;
   font-size: 1.5rem;
-  padding-right: 0.5rem;
-  padding-bottom: 2rem; }
+  padding: 0.5rem 0.5rem;
+  margin: 0; }
 
 .parrafo2 {
   font-weight: normal;
   color: #212121;
-  padding-right: 0.5rem;
-  padding-bottom: 1rem;
+  padding: 0.5rem 0.5rem;
   font-size: 1.5rem; }
 
 /*Clases referidas a imagenes*/
@@ -863,29 +866,31 @@ nav div ul li a:hover {
     font-weight: normal;
     color: #fff;
     font-size: 2rem;
-    padding-right: 0.5rem;
-    padding-bottom: 2rem; }
+    padding: 0.5rem 0.5rem;
+    margin: 0; }
   .parrafo2 {
     font-weight: normal;
     color: #212121;
-    padding-right: 3rem;
-    padding-bottom: 1rem;
+    padding: 0.5rem 0.5rem;
+    margin: 0;
     font-size: 1.5rem; }
   .h2Subtitulo {
     text-align: center;
     font-size: 3rem;
-    font-weight: normal; }
+    font-weight: normal;
+    padding-bottom: 2rem; }
   .h2SubtArtPpal {
     font-weight: normal;
     color: #ffffff;
-    text-align: right;
-    font-size: 3rem;
-    padding-right: 3rem; }
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding: 3rem 0rem; }
   .h2SubtArtSec {
     font-weight: bolder;
     color: #212121;
-    text-align: right;
-    font-size: 3rem;
+    text-align: center;
+    font-size: 3.2rem;
     padding-right: 3rem;
     padding-top: 2rem;
     padding-bottom: 1rem; } }
