@@ -217,7 +217,7 @@ input {
     background-color: $colorPrimarioOscuro;
     padding: 20px 20px; 
     position: fixed;
-    bottom: 2.6rem;
+    bottom: 2.3rem;
     left: 3rem;
     transition: all 300ms ease 0ms;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -225,7 +225,7 @@ input {
     text-decoration: none;
   }
   .btn-flotante:hover {
-    background-color: $colorPrimario; /* Color de fondo al pasar el cursor */
+    background-color: $colorPrimario; 
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-7px);
   }
