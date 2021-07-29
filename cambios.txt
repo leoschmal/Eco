@@ -425,4 +425,6 @@ Cambios Aplicados:
     - Cambio color de boton Limpiar en formulario de contacto por uno con menos intensidad, 
     para que resalte el de enviar.
     - Unifico criterio de nombres de clases, lo que tenia en BEM lo paso a camel case.
+    - Modifico tabla productos para hacerla responsive.
+    - arreglo algunos paddings y margins.
     

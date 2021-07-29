@@ -153,7 +153,7 @@
     font-size: 3.5rem;
     font-weight: bold;
     padding: 3rem 0rem;
-     }
+  }
 
   .h2SubtArtSec {
     @include encabezados(bolder, $colorTextoPrimario);
@@ -166,6 +166,7 @@
 }
 
 @media (min-width: 768px) {
+
   /*Tabla productos aplico Grid*/
   .tabla {
     display: grid;
